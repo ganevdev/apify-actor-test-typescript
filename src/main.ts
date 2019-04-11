@@ -2,8 +2,13 @@ import Apify from 'apify';
 
 Apify.main(
   async (): Promise<void> => {
+    const input = await Apify.getValue('INPUT');
+    const { url } = input;
+
+    if (!url) throw new Error('Attribute url missing in input.');
+    //
     const requestQueue = await Apify.openRequestQueue();
-    await requestQueue.addRequest({ url: 'https://www.example.com/' });
+    await requestQueue.addRequest({ url: url });
 
     const crawler = new Apify.PuppeteerCrawler({
       requestQueue,
