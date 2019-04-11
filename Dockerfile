@@ -5,7 +5,7 @@ COPY . ./
 
 # Install default dependencies, print versions of everything
 RUN npm --quiet set progress=false \
-  && npm i \
+  && npm install \
   && echo "Installed NPM packages:" \
   && npm list \
   && echo "Node.js version:" \
