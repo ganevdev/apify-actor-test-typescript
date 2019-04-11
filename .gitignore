@@ -55,3 +55,6 @@ package-lock.json
 
 # apify
 apify_storage
+
+# docker
+.npmrc
