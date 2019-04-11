@@ -32,7 +32,6 @@ node_modules
 examples/biz-website/public/
 examples/blog/public/
 *.un~
-dist
 bin/published.js
 
 # Build Path of Test Fixtures
@@ -48,10 +47,6 @@ node_modules/
 .idea/
 .vscode/
 *.sw*
-
-.serverless/
-yarn.lock
-package-lock.json
 
 # apify
 apify_storage
