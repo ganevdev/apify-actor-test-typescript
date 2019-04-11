@@ -12,6 +12,7 @@
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "scripts": {
+    "start": "node dist/main.js",
     "build": "tsc",
     "clean": "rimraf dist",
     "lint": "eslint --fix \"src/**/*.{ts,tsx,js,jsx}\"",

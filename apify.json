@@ -1,0 +1,6 @@
+{
+  "name": "apify-actor-test-typescript",
+  "version": "0.0",
+  "buildTag": "latest",
+  "env": null
+}
